@@ -230,6 +230,7 @@ class AppDynamicsInstaller(PHPExtensionHelper):
             [ 'cat /home/vcap/app/appdynamics/phpini/appdynamics_agent.ini >> /home/vcap/app/php/etc/php.ini'],
             [ 'echo "AppDynamics installation complete"']
         ]
+        print(commands)
         return commands
 
 AppDynamicsInstaller.register(__name__)
